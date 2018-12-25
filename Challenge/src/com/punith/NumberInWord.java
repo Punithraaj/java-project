@@ -43,7 +43,13 @@ public class NumberInWord {
         }
     }
 
-    public static void main(String[] args) {
-        printNumberInWord(20);
+    public static void numberToWords(int number) {
+
+        int num=Integer.parseInt(new StringBuilder(Integer.toString(number)).reverse().toString());
+        while(num>0)
+        {
+            printNumberInWord(num%10);
+                    num=num/10;
+        }
     }
 }
