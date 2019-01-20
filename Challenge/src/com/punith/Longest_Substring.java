@@ -7,7 +7,6 @@ public class Longest_Substring {
         int count=0;
         int max=0;
             while(i<n) {
-                System.out.println(i+""+n);
                 int j = i + 1;
                 if (j < n) {
                     if (str.charAt(i) + 1 == str.charAt(j)) {
@@ -25,10 +24,10 @@ public class Longest_Substring {
                     break;
                 }
             }
-            return max;
+            return max+1;
     }
     public static void main(String[] args) {
-        String str ="punithraj";
+        String str ="124567825";
         System.out.println(evaluate(str,str.length(),0));
     }
 }
